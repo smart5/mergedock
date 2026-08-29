@@ -1,0 +1,56 @@
+name: Feature request
+description: Suggest an improvement for MergeDock
+title: "[Request] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing an idea. You may write your request in any supported language.
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow or problem
+      description: Describe the comparison or merge task you are trying to complete.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested improvement
+      description: Explain what you would like MergeDock to do and where it would fit in the current workflow.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: comparison-mode
+    attributes:
+      label: Related area
+      options:
+        - 2-Way text comparison
+        - 3-Way merge
+        - Folder comparison
+        - Image comparison
+        - Binary comparison
+        - Git integration
+        - Settings and accessibility
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround
+      description: If you already have a workaround, describe it here.
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have not included confidential files, credentials, personal information, or private repository details.
+          required: true

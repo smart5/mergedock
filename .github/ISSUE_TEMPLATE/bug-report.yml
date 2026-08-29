@@ -1,0 +1,86 @@
+name: Bug report
+description: Report a reproducible problem in MergeDock
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve MergeDock. You may write your report in any supported language.
+
+        For account, purchase, or privacy questions, use [MergeDock Support](https://mergedock.net/support.html) or email [support@mergedock.net](mailto:support@mergedock.net).
+
+  - type: input
+    id: mergedock-version
+    attributes:
+      label: MergeDock version
+      description: Open About MergeDock to find the version and build number.
+      placeholder: "1.0 (100)"
+    validations:
+      required: true
+
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      placeholder: "macOS 26.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: comparison-mode
+    attributes:
+      label: Comparison mode
+      options:
+        - 2-Way text comparison
+        - 3-Way merge
+        - Folder comparison
+        - Image comparison
+        - Binary comparison
+        - Git difftool
+        - Git mergetool
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the smallest sequence that reproduces the problem.
+      placeholder: |
+        1. Open ...
+        2. Choose ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+      description: Include the exact error message when one was shown.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add only sanitized screenshots, sample files, or logs that are necessary to understand the issue.
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I have removed confidential source files, credentials, personal information, private paths, and unredacted logs from this report.
+          required: true

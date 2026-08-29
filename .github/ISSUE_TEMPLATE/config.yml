@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: MergeDock Support
+    url: https://mergedock.net/support.html
+    about: Help with file access, saving, encodings, Git integration, recovery, purchases, and other support questions.
+  - name: Privacy Policy
+    url: https://mergedock.net/privacy.html
+    about: Learn how MergeDock handles files, permissions, history, and recovery data.
+  - name: Email Support
+    url: mailto:support@mergedock.net
+    about: Contact support privately when an issue should not be discussed in public.
